@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="6dp">
+
+        <com.vra.collapsiblecalendar.widget.CollapsibleCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonLeft_drawableTintColor="?android:textColorPrimary"
+            app:buttonRight_drawableTintColor="?android:textColorPrimary"
+            app:eventColor="@android:color/holo_blue_dark"
+            app:expandIconColor="?android:textColorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:primaryColor="?colorPrimary"
+            app:selectedItem_background="@drawable/circle_solid_background"
+            app:selectedItem_textColor="@android:color/white"
+            app:textColor="?android:textColorPrimary"
+            app:todayItem_background="@drawable/circle_stroke_background"
+            app:todayItem_textColor="?colorAccent" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
